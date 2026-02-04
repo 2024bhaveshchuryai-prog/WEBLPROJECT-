@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bhavesh Churai | Learner • IT Student • Founder</title>
+
+<style>
+/* ================= ROOT ================= */
+:root{
+    --black:#050505;
+    --deep-black:#000000;
+    --gold:#d4af37;
+    --soft-gold:#f5d76e;
+    --text:#f1f1f1;
+    --muted:#b5b5b5;
+}
+
+/* ================= RESET ================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ================= BODY ================= */
+body{
+    background:
+        radial-gradient(circle at top, #111111, #000000);
+    color:var(--text);
+    font-family:"Segoe UI", system-ui, sans-serif;
+    line-height:1.65;
+}
+
+/* ================= GLASS ================= */
+.glass{
+    background:rgba(212,175,55,0.08);
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+    border:1px solid rgba(212,175,55,0.28);
+}
+
+/* ================= NAVBAR ================= */
+nav{
+    position:sticky;
+    top:0;
+    z-index:999;
+    padding:16px 48px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:linear-gradient(135deg,#020202,#000000);
+}
+
+.brand h1{
+    font-size:20px;
+    color:var(--gold);
+}
+.brand p{
+    font-size:12px;
+    color:var(--muted);
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:26px;
+}
+
+nav a{
+    color:#e0e0e0;
+    text-decoration:none;
+    font-size:14px;
+}
+nav a:hover{
+    color:var(--gold);
+}
+
+/* ================= HERO ================= */
+.hero{
+    max-width:1300px;
+    margin:auto;
+    padding:80px 48px;
+    display:grid;
+    grid-template-columns:1.2fr 0.8fr;
+    gap:50px;
+}
+
+.badge{
+    font-size:12px;
+    letter-spacing:3px;
+    color:var(--gold);
+}
+
+.hero h2{
+    font-size:46px;
+    margin-top:8px;
+}
+.gold{
+    color:var(--gold);
+}
+
+.hero p{
+    margin-top:16px;
+    font-size:17px;
+    color:#e6e6e6;
+}
+
+/* ================= PHOTO ================= */
+.photo-wrap{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background:
+        radial-gradient(circle at top,
+        #f5d76e,
+        #b08a18,
+        #000000);
+    padding:4px;
+    margin-bottom:18px;
+}
+.photo{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    background:#0b0b0b;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:12px;
+    color:#777;
+}
+
+/* ================= HERO CARD ================= */
+.hero-card{
+    padding:34px;
+    border-radius:22px;
+}
+
+/* ================= SECTION ================= */
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:50px 48px;
+}
+
+section h3{
+    color:var(--gold);
+    margin-bottom:10px;
+    font-size:26px;
+}
+
+section p{
+    color:#e5e5e5;
+}
+
+/* ================= GRID ================= */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:22px;
+    margin-top:22px;
+}
+
+.card{
+    padding:22px;
+    border-radius:18px;
+}
+
+/* ================= COMPANY ================= */
+.company{
+    background:linear-gradient(135deg,#070707,#0e0e0e);
+    border-radius:26px;
+}
+
+/* ================= FOOTER ================= */
+footer{
+    text-align:center;
+    padding:40px;
+    background:#000000;
+    color:#aaaaaa;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <div class="brand">
+        <h1>Bhavesh Churai</h1>
+        <p>Learner • IT Student • Founder</p>
+    </div>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#objective">Objective</a></li>
+        <li><a href="#strengths">Strengths</a></li>
+        <li><a href="#company">Company</a></li>
+        <li><a href="#vision">Vision</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+
+    <div>
+        <span class="badge">BUILT FOR LONG-TERM POWER</span>
+        <h2>
+            Building Wealth.<br>
+            Designing Systems.<br>
+            <span class="gold">Growing People.</span>
+        </h2>
+
+        <p>
+            I am <strong>Bhavesh Churai</strong>, a second-year Information Technology
+            student with a strong interest in building technology-driven businesses
+            and scalable digital systems. My focus areas include fintech,
+            real-estate–enabled systems, and structured problem-solving where
+            technology, data, and process design solve real-world challenges.
+        </p>
+
+        <p>
+            I work with discipline, consistency, and attention to detail, valuing
+            clarity, accountability, and long-term thinking across both technical
+            and business contexts.
+        </p>
+    </div>
+
+    <div class="hero-card glass">
+        <div class="photo-wrap">
+            <div class="photo">Your Photo</div>
+        </div>
+
+        <h3 style="color:var(--gold)">Career Objective</h3>
+        <p>
+            To pursue diverse professional opportunities that allow me to apply
+            and expand my knowledge in Information Technology while exploring
+            fintech, real estate, and broader business domains. I aim to work
+            alongside capable teams and mentors to build structured, high-quality
+            work, grow shared value, and develop long-term ventures grounded in
+            discipline, trust, and strategic execution.
+        </p>
+        <p>
+            My objective is to grow steadily with my people, use technology
+            thoughtfully across industries, and create enduring financial and
+            professional impact through clarity, consistency, and strong leadership.
+        </p>
+    </div>
+
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <h3>Professional Overview</h3>
+    <p>
+        Looking ahead, I seek opportunities to collaborate with forward-thinking
+        teams, gain practical exposure, and contribute to ventures that prioritize
+        reliability, execution, and measurable impact. My long-term goal is to grow
+        into a professional who builds dependable systems and businesses that create
+        lasting value through thoughtful leadership and well-designed solutions.
+    </p>
+</section>
+
+<!-- STRENGTHS -->
+<section id="strengths">
+    <h3>Core Strengths & Focus Areas</h3>
+
+    <div class="grid">
+        <div class="card glass">
+            <strong class="gold">Strategic Thinking</strong>
+            <p>Long-term planning, patience, and structured decision-making.</p>
+        </div>
+        <div class="card glass">
+            <strong class="gold">Technology & Information Systems</strong>
+            <p>Programming, web development, and strong IT fundamentals.</p>
+        </div>
+        <div class="card glass">
+            <strong class="gold">FinTech & Financial Systems</strong>
+            <p>Digital finance, scalable financial models, and efficient capital flow.</p>
+        </div>
+        <div class="card glass">
+            <strong class="gold">Leadership & Execution</strong>
+            <p>Discipline, accountability, calm authority, and trust-driven leadership.</p>
+        </div>
+    </div>
+</section>
+
+<!-- COMPANY -->
+<section id="company" class="company">
+    <h3>Haven Group</h3>
+    <p>
+        <strong>Haven Group</strong> is a professional real estate broking company
+        focused on delivering transparent, reliable, and value-driven property
+        solutions. Founded in partnership by <strong>Bhavesh Churai</strong> and
+        <strong>Anisha Churyai</strong>, the firm operates with a clear emphasis on
+        trust, market understanding, and long-term client relationships.
+    </p>
+    <p>
+        The company aligns client needs with residential and investment
+        opportunities through structured processes, ethical practices, and
+        informed guidance — positioning itself as a dependable partner defined by
+        clarity, professionalism, and consistent execution.
+    </p>
+</section>
+
+<!-- VISION -->
+<section id="vision">
+    <h3>Vision & Legacy</h3>
+    <p>
+        My vision is to build wealth without losing humanity — to grow alongside
+        people, strengthen them financially and mentally, and create confidence
+        rooted in integrity and kindness.
+    </p>
+
+    <div class="grid">
+        <div class="card glass">
+            <strong class="gold">The Vision</strong>
+            <p>Global influence through long-term leadership and strategic growth.</p>
+        </div>
+        <div class="card glass">
+            <strong class="gold">The Impact</strong>
+            <p>Strengthening people financially and mentally through opportunity and clarity.</p>
+        </div>
+        <div class="card glass">
+            <strong class="gold">The Principle</strong>
+            <p>Decisions driven by discipline, trust, and responsibility.</p>
+        </div>
+        <div class="card glass">
+            <strong class="gold">The Legacy</strong>
+            <p>Enduring power built with honor, integrity, and respect for others.</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>📧 2024.bhavesh.churyai@ves.ac.in</p>
+    <p>© 2026 Bhavesh Churai</p>
+</footer>
+
+</body>
+</html>
