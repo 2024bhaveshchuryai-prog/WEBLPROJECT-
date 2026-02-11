@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Practical 3 | Bhavesh Churai Portfolio</title>
+
+<style>
+:root{
+    --gold:#d4af37;
+    --soft-gold:#f5d76e;
+    --text:#f1f1f1;
+}
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background: radial-gradient(circle at top, #111111, #000000);
+    color:var(--text);
+    font-family:"Segoe UI", system-ui, sans-serif;
+    transition: background 0.8s ease;
+    line-height:1.7;
+}
+
+/* NAV */
+nav{
+    display:flex;
+    justify-content:space-between;
+    padding:18px 60px;
+    background:#000;
+    position:sticky;
+    top:0;
+}
+
+nav h1{
+    color:var(--gold);
+    font-size:22px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:0.3s;
+}
+nav a:hover{
+    color:var(--gold);
+}
+
+/* HERO */
+.hero{
+    padding:90px 60px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.hero h2{
+    font-size:42px;
+    color:var(--gold);
+}
+
+.hero p{
+    margin-top:20px;
+    font-size:18px;
+    max-width:900px;
+}
+
+/* SECTION */
+section{
+    padding:70px 60px;
+    max-width:1100px;
+    margin:auto;
+}
+
+h3{
+    color:var(--gold);
+    margin-bottom:20px;
+    font-size:26px;
+}
+
+/* GLASS CARD */
+.card{
+    margin-top:25px;
+    padding:25px;
+    border-radius:18px;
+    background:rgba(255,255,255,0.07);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.1);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+/* BUTTON */
+button{
+    padding:8px 15px;
+    margin:8px 6px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    background:linear-gradient(45deg,#d4af37,#f5d76e);
+    color:black;
+    font-weight:600;
+    transition:all 0.3s ease;
+}
+
+button:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 15px rgba(212,175,55,0.6);
+}
+
+/* INPUT */
+input{
+    padding:8px;
+    border-radius:6px;
+    border:none;
+    margin-top:10px;
+}
+
+/* LIST */
+ul{
+    margin-top:15px;
+    padding-left:20px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:40px;
+    background:#000;
+    color:#aaa;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h1>Bhavesh Churai</h1>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#strengths">Strengths</a></li>
+        <li><a href="#dom">DOM Practice</a></li>
+    </ul>
+</nav>
+
+<!-- HERO INTRO -->
+<div class="hero">
+    <h2>Building Wealth. Designing Systems. Growing People.</h2>
+    <p>
+        I am <strong>Bhavesh Churai</strong>, a second-year Information Technology
+        student with a strong interest in building technology-driven businesses
+        and scalable digital systems. My focus areas include fintech,
+        structured problem-solving, and real-estate–enabled platforms
+        where technology and disciplined execution create long-term value.
+    </p>
+</div>
+
+<!-- BIGGER ABOUT SECTION -->
+<section id="about">
+    <h3>About Me</h3>
+    <div class="card">
+        <p>
+            I believe in discipline, clarity, and long-term strategic thinking.
+            My approach combines technical knowledge with business awareness,
+            allowing me to design systems that are efficient, scalable,
+            and ethically structured.
+        </p>
+        <p style="margin-top:15px;">
+            I aim to grow alongside capable teams and mentors while building
+            dependable ventures grounded in trust, accountability,
+            and strong execution. My vision is to create impact
+            without losing integrity and to strengthen people financially
+            and mentally through thoughtful leadership.
+        </p>
+    </div>
+</section>
+
+<!-- STRENGTHS -->
+<section id="strengths">
+    <h3>Core Strengths & Focus Areas</h3>
+
+    <div class="card">Strategic Thinking – Long-term planning & structured execution.</div>
+    <div class="card">Technology & Information Systems – Programming & Web Development.</div>
+    <div class="card">FinTech & Financial Systems – Digital finance & capital flow.</div>
+    <div class="card">Leadership & Execution – Discipline & trust-driven growth.</div>
+</section>
+
+<!-- DOM SECTION -->
+<section id="dom">
+    <h3>Practical 3 – Advanced DOM Manipulation</h3>
+
+    <!-- Change Text -->
+    <div class="card">
+        <p id="dynamicText">
+            Click below to change this professional statement dynamically.
+        </p>
+        <button onclick="changeText()">Change Statement</button>
+    </div>
+
+    <!-- Skill Builder -->
+    <div class="card">
+        <h4>Add Your Custom Skill</h4>
+        <input type="text" id="skillInput" placeholder="Enter Skill Name">
+        <br>
+        <button onclick="addSkill()">Add Skill</button>
+        <button onclick="removeSkill()">Remove Last Skill</button>
+
+        <ul id="skillList">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Problem Solving</li>
+        </ul>
+    </div>
+
+    <!-- Theme Switcher -->
+    <div class="card">
+        <h4>Change Portfolio Gradient</h4>
+        <button onclick="changeTheme('black')">Black Gold</button>
+        <button onclick="changeTheme('royal')">Royal Blue</button>
+        <button onclick="changeTheme('brown')">Luxury Brown</button>
+        <button onclick="changeTheme('cream')">Elegant Cream</button>
+        <button onclick="changeTheme('cool')">Professional Cool</button>
+    </div>
+</section>
+
+<footer>
+© 2026 Bhavesh Churai | Practical 3 Submission
+</footer>
+
+<script src="pract3.js"></script>
+</body>
+</html>
